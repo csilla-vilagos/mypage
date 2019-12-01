@@ -1,0 +1,100 @@
+body{
+	margin: 2%;
+	background-color: #f5e6db;
+}
+
+header{
+	text-align: center;
+}
+
+h1{ /*Main title*/
+	color: #ffb27a;
+	background-color: #4F000B;
+	font-size: 5vw;
+	margin-bottom: 0px;
+}
+
+nav{ /*Navigation bar*/
+	background-color: #ffb27a;
+	background: linear-gradient(#ffb27a, #f5e6db);
+
+	font-size: 2vw;
+	font-variant: small-caps;
+	font-family: Georgia, Arial, serif;
+	padding: 16px;
+}
+
+nav a, nav a:visited{ /*Nav links*/
+	color: #f5e6db;
+	background-color: #5c0a15;
+	text-decoration: none;
+	font-weight: bold;
+	border: solid;
+	border-color: transparent;
+	transition: background 0.15s;
+	transition-timing-function: ease-out;
+	padding-right: 3px;
+	padding-left: 3px;
+
+}
+
+nav a:focus, nav a:hover{ /*hover and tabbing*/
+	color: #4F000B; 
+	background-color: #f5e6db;
+
+}
+
+h2{ /*Section titles*/
+	color: #011627;
+	background-color: #04a899;
+	font-size: 2.5vw;
+	font-family: Georgia;
+	text-align: center;
+}
+
+div.contentBlocks{
+	display: flex;
+	justify-content: space-between;
+}
+
+section{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 33%;
+	margin: 0.5%;
+}
+
+ul{
+	list-style-image: url("../imgs/smol.png");
+}
+
+details{ /*Whole dropdown field*/
+	background-color: transparent;
+	font-style: italic;
+}
+
+summary{ /*Dropdown Title*/
+	background-color: #04a899;
+	font-style: normal;
+}
+
+footer{
+	background-color: #ffb27a;
+	clear: both;
+	padding: 12px;
+	padding-top: 25px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+img{
+	width: 8vw;
+}
+
+::selection {
+  background-color: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background-color: #ffb7b7; /* Gecko Browsers */
+}
