@@ -1,5 +1,5 @@
 body{
-	margin: 2%;
+	margin: 0%;
 	background-color: #f5e6db;
 }
 
@@ -11,17 +11,26 @@ h1{ /*Main title*/
 	color: #ffb27a;
 	background-color: #4F000B;
 	font-size: 5vw;
-	margin-bottom: 0px;
+	margin: 0px;
 }
 
 nav{ /*Navigation bar*/
-	background-color: #ffb27a;
-	background: linear-gradient(#ffb27a, #f5e6db);
-
-	font-size: 2vw;
-	font-variant: small-caps;
 	font-family: Georgia, Arial, serif;
-	padding: 16px;
+	font-variant: small-caps;
+	font-size: 2vw;
+	padding: 16px 0px;
+	font-size: 0px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav a{ /*nav blocks*/
+	display: inline-block;
+    box-sizing: border-box;
+	width: 25%;
+	font-size: 2.3vw;
+/*	padding: 0px 3px;*/
+/*	margin: 0% 0.25%;*/
 }
 
 nav a, nav a:visited{ /*Nav links*/
@@ -29,19 +38,18 @@ nav a, nav a:visited{ /*Nav links*/
 	background-color: #5c0a15;
 	text-decoration: none;
 	font-weight: bold;
-	border: solid;
-	border-color: transparent;
 	transition: background 0.15s;
 	transition-timing-function: ease-out;
-	padding-right: 3px;
-	padding-left: 3px;
-
 }
 
 nav a:focus, nav a:hover{ /*hover and tabbing*/
 	color: #4F000B; 
 	background-color: #f5e6db;
+}
 
+header div{
+	display: block;
+	background: linear-gradient(#ffb27a, #f5e6db);
 }
 
 h2{ /*Section titles*/
@@ -52,17 +60,36 @@ h2{ /*Section titles*/
 	text-align: center;
 }
 
-div.contentBlocks{
-	display: flex;
-	justify-content: space-between;
+body div{
+	/*display: flex;
+	justify-content: space-between;*/
+	text-align: center;
+	font-size: 0px;
+	background-color: transparent;
 }
 
-section{
+div section{
 	display: inline-block;
-	box-sizing: border-box;
-	width: 33%;
-	margin: 0.5%;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: left;
+    width: 50%;
+    font-size: 1.5vw;
 }
+
+div section:first-child{
+	padding-right: 0.5%;
+	width: 30%;
+}
+
+/*div section:second-child{
+	padding-left: 0.5%;
+}*/
+
+div section:last-child{
+	width: 80%;
+}
+
 
 ul{
 	list-style-image: url("../imgs/smol.png");
@@ -71,6 +98,7 @@ ul{
 details{ /*Whole dropdown field*/
 	background-color: transparent;
 	font-style: italic;
+	margin-bottom: 20px;
 }
 
 summary{ /*Dropdown Title*/
